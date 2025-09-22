@@ -33,22 +33,25 @@ body {
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
   #lyrics {
-      font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
-      margin-bottom: 530px;
-      letter-spacing: 3px;
+    font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
+    margin-bottom: 530px;
+    letter-spacing: 3px;
   }
-
 }
 .titulo {
-  margin-bottom: 180px;
   font-family: "Arial Narrow", Arial, sans-serif;
-  color: yellow;
+  color: rgb(255, 255, 87);
   position: absolute;
+  top: 100px;
+  left: 0;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   opacity: 0;
   animation: fadeIn 3s ease-in-out forwards;
   text-align: center;
+  font-size: 14px;
+  padding-inline: 32px;
+  text-shadow: 0 0 10px rgb(255, 255, 0.3);
 }
 @keyframes fadeIn {
   from {
@@ -62,11 +65,10 @@ body {
 .night {
   z-index: -1;
   position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  inset: 0;
+  overflow: hidden;
   filter: blur(0.1vmin);
   background-image: radial-gradient(
       ellipse at top,
@@ -111,13 +113,12 @@ body {
 
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
-.flowers {
-      font-size: 14px;
-      margin-bottom: 35%;
-      letter-spacing: 3px;
-      transform: scale(1.0);
-}
-
+  .flowers {
+    font-size: 14px;
+    margin-bottom: 35%;
+    letter-spacing: 3px;
+    transform: scale(1);
+  }
 }
 
 .flower {
@@ -1608,16 +1609,17 @@ body {
   animation-play-state: paused !important;
 } /*# sourceMappingURL=main.css.map */
 
-
 /* Reset de estilos básicos */
-body, h1, p {
+body,
+h1,
+p {
   margin: 0;
   padding: 0;
 }
 
 /* Estilos generales */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f7f7f7;
   color: #333;
 }
@@ -1638,21 +1640,21 @@ h1 {
 @media screen and (max-width: 600px) {
   /* Estilos para pantallas pequeñas */
   h1 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   /* Estilos para pantallas medianas */
   h1 {
-      font-size: 1.8em;
+    font-size: 1.8em;
   }
 }
 
 @media screen and (min-width: 1025px) {
   /* Estilos para pantallas grandes */
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 }
 
